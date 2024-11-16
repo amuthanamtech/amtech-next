@@ -2,4 +2,11 @@
 // by running `wrangler types --env-interface CloudflareEnv env.d.ts`
 
 interface CloudflareEnv {
+  SMTP_HOST: string
+  SMTP_PORT: string
+  SMTP_SECURE: string
+  SMTP_USER: string
+  SMTP_PASSWORD: string
+  SMTP_FROM_EMAIL: string
+  SMTP_TO_EMAIL: string
 }

@@ -1,5 +1,5 @@
 import type { NextRequest } from 'next/server'
-import { getRequestContext } from '@cloudflare/next-on-pages'
+// @ts-ignoreimport { getRequestContext } from '@cloudflare/next-on-pages'
 
 export const runtime = 'edge'
 
@@ -20,3 +20,4 @@ export async function GET(request: NextRequest) {
 
   return new Response(responseText)
 }
+

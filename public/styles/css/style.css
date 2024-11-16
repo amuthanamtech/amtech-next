@@ -1,7 +1,9 @@
 /********** Template CSS **********/
 :root {
-    --primary: #6222CC;
-    --secondary: #FBA504;
+    /* --primary: #6222CC; */
+    --primary: #c433ff;
+    /* --secondary: #FBA504; */
+    --secondary: #fee900;
     --light: #F6F4F9;
     --dark: #04000B;
 }
@@ -89,7 +91,8 @@ h6,
 
 /*** Navbar ***/
 .navbar{
-    background-color: var(--light);
+    /* background-color: var(--light); */
+    background-color: #FFFFFF;
 }
 .navbar .dropdown-toggle::after {
     border: none;

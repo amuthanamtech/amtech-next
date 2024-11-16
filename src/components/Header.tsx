@@ -48,27 +48,26 @@ const Header = () => {
         </button>
         <div className="navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav mx-auto py-0">
-            <Link href="/" className={`nav-item nav-link ${isActive('/') ? 'active' : ''}`} onClick={handleLinkClick}>
+            <Link href="/" className={`nav-item nav-link mx-3 ${isActive('/') ? 'active rounded-pill' : ''}`} onClick={handleLinkClick}>
               Home
             </Link>
-            <Link href="/about" className={`nav-item nav-link ${isActive('/about') ? 'active' : ''}`} onClick={handleLinkClick}>
+            <Link href="/about" className={`nav-item nav-link mx-3 ${isActive('/about') ? 'active rounded-pill' : ''}`} onClick={handleLinkClick}>
               About
             </Link>
-            <Link href="/service" className={`nav-item nav-link ${isActive('/service') ? 'active' : ''}`} onClick={handleLinkClick}>
+            <Link href="/service" className={`nav-item nav-link mx-3 ${isActive('/services') ? 'active rounded-pill' : ''}`} onClick={handleLinkClick}>
               Service
             </Link>
-            <Link href="/project" className={`nav-item nav-link ${isActive('/project') ? 'active' : ''}`} onClick={handleLinkClick}>
+            <Link href="/project" className={`nav-item nav-link mx-3 ${isActive('/projects') ? 'active rounded-pill' : ''}`} onClick={handleLinkClick}>
               Project
             </Link>
-            <Link href="/contact" className={`nav-item nav-link ${isActive('/contact') ? 'active' : ''}`} onClick={handleLinkClick}>
+            <Link href="/contact" className={`nav-item nav-link mx-3 ${isActive('/contact') ? 'active rounded-pill' : ''}`} onClick={handleLinkClick}>
               Contact
             </Link>
           </div>
           <Link href="/get-started" className="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">
             Get Started
           </Link>
-        </div>
-      </nav>
+        </div>      </nav>
     </div>
   )
 }
