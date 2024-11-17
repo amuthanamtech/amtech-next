@@ -46,7 +46,6 @@ export default function RootLayout({
         <link href="/styles/css/style.css" rel="stylesheet" />
       </head>
       <body className={inter.className}>
-        <Header />
         {children}
         <Footer />
       </body>

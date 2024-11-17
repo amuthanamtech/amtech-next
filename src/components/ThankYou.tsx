@@ -2,10 +2,10 @@ import React from 'react'
 
 const ThankYou = () => {
   return (
-    <div className="container-xxl py-5">
+    <div className="container py-5 bg-white p-100">
             <div className="container py-5 px-lg-5">
                 <div className="wow fadeInUp" data-wow-delay="0.1s">
-                    <p className="section-title text-secondary justify-content-center"><span></span>Thank You<span></span></p>
+                    {/* <p className="section-title text-secondary justify-content-center"><span></span>Thank You<span></span></p> */}
                     <h1 className="text-center mb-5">Message Sent Successfully!</h1>
                 </div>
                 <div className="row justify-content-center">
@@ -16,8 +16,7 @@ const ThankYou = () => {
                     </div>
                 </div>
             </div>
-        </div>
-  )
+        </div>  )
 }
 
 export default ThankYou

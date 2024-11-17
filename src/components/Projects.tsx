@@ -63,11 +63,11 @@ const Projects = () => {
   }
 
   return (
-    <div className="container-xxl">
-      <div className="container py-5 px-lg-5">
+    <div className="container project-listing py-5 my-16 border border-blue-500 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="py-5 px-lg-5">
         <div className="wow fadeInUp" data-wow-delay="0.1s">
           <p className="section-title text-secondary justify-content-center">
-            <span></span>Our Projects<span></span>
+            {/* <span></span>Our Projects<span></span> */}
           </p>
           <h1 className="text-center mb-5">Recently Completed Projects</h1>
         </div>

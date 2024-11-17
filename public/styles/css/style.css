@@ -1,13 +1,22 @@
 /********** Template CSS **********/
 :root {
     /* --primary: #6222CC; */
-    --primary: #c433ff;
-    /* --secondary: #FBA504; */
-    --secondary: #fee900;
+    /* --primary: #c433ff; */
+
+    --primary: #ff00ff;
+
+
+    --secondary: #FBA504;
+    /* --secondary: #fee900; */
+
+
     --light: #F6F4F9;
     --dark: #04000B;
 }
 
+.bg-primary {
+    background-color: #D665D3 !important;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -96,23 +105,22 @@ h6,
 }
 .navbar .dropdown-toggle::after {
     border: none;
-    content: "\f067";
     font-family: "Font Awesome 5 Free";
     font-size: 10px;
     font-weight: bold;
+    content: none;
     vertical-align: middle;
     margin-left: 8px;
-    
 }
-
 .navbar-light .navbar-nav .nav-link {
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
     font-family: 'Jost', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    color: var(--primary) !important;
+    font-size: 24px;
+    font-weight: 800;
+    /* color: var(--secondary) !important; */
+    color: var(--light) !important;
     outline: none;
     transition: .5s;
 }
@@ -124,7 +132,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--secondary) !important;
+    color: var(--dark) !important;
 }
 
 .navbar-light .navbar-brand h1 {
@@ -522,7 +530,7 @@ h6,
     margin-top: 2rem;
     padding-top: 9rem;
     background:
-        url(../../assets/img/bg-top.png),
+        /* url(../../assets/img/bg-top.png), */
         url(../../assets/img/map.png);
     background-position:
         center top,
@@ -597,3 +605,73 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+
+.container {
+    max-width: 1700px !important;
+    padding: 0 15px;
+}
+
+.active.rounded-pill {
+    background-color: #F3F6F8;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    padding: 8px 16px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: all 0.3s ease;
+    opacity: 0.9;
+}
+
+.pt-50{
+    padding-top: 50px;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+.process-list {
+    list-style: none;
+    padding-left: 60px;
+    position: relative;
+  }
+  
+  .process-item {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  
+  .step-number {
+    position: absolute;
+    top: -6px;
+    left: -60px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border: 2px solid white;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  }
+  
+  .step-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  

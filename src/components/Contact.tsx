@@ -11,7 +11,7 @@ const Contact = () => {
   });
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { id, value } = e.target;
     setFormData(prevState => ({
       ...prevState,
@@ -19,8 +19,22 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    
+    // Check if any field is empty
+    if (!formData.name || !formData.email || !formData.subject) {
+      alert('Please fill in all fields');
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      alert('Please enter a valid email address');
+      return;
+    }
+
     setIsLoading(true);
     try {
       const response = await fetch('/api/contact', {
@@ -51,16 +65,21 @@ const Contact = () => {
   };
 
   return (
-    <div className="container-xxl py-5">
-            <div className="container py-5 px-lg-5">
+    <div className="container py-5" style={{
+      backgroundImage: "url('/')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundColor: 'white'
+    }}>
+            <div className="container py-5 px-lg-5 p-100">
                 <div className="wow fadeInUp" data-wow-delay="0.1s">
-                    <p className="section-title text-secondary justify-content-center"><span></span>Contact Us<span></span></p>
-                    <h1 className="text-center mb-5">Contact For Any Query</h1>
+                    <h1 className="text-center mb-5">Get in Touch with Us</h1>
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-7">
                         <div className="wow fadeInUp" data-wow-delay="0.3s">
-                            <p className="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                            <p className="text-center mb-4">We'd love to hear from you! Whether you have a question, need support, or want to explore how we can help with your staffing or development needs, feel free to reach out. Our team is ready to assist you!</p>
                             <form onSubmit={handleSubmit}>
                                 <div className="row g-3">
                                     <div className="col-md-6">
@@ -73,8 +92,9 @@ const Contact = () => {
                                                 autoComplete="name"
                                                 value={formData.name}
                                                 onChange={handleInputChange}
+                                                required
                                             />
-                                            <label htmlFor="name">Your Name</label>
+                                            <label htmlFor="name">Your Name *</label>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
@@ -87,8 +107,9 @@ const Contact = () => {
                                                 autoComplete="email"
                                                 value={formData.email}
                                                 onChange={handleInputChange}
+                                                required
                                             />
-                                            <label htmlFor="email">Your Email</label>
+                                            <label htmlFor="email">Your Email *</label>
                                         </div>
                                     </div>
                                     <div className="col-12">
@@ -101,8 +122,9 @@ const Contact = () => {
                                                 autoComplete="on"
                                                 value={formData.subject}
                                                 onChange={handleInputChange}
+                                                required
                                             />
-                                            <label htmlFor="subject">Subject</label>
+                                            <label htmlFor="subject">Subject *</label>
                                         </div>
                                     </div>
                                     <div className="col-12">
@@ -116,7 +138,7 @@ const Contact = () => {
                                                 value={formData.message}
                                                 onChange={handleInputChange}
                                             ></textarea>
-                                            <label htmlFor="message">Message</label>
+                                            <label htmlFor="message">Message </label>
                                         </div>
                                     </div>
                                     <div className="col-12">
