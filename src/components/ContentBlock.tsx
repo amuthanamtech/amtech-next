@@ -10,8 +10,8 @@ interface ContentBlockProps {
         subtitle: string;
         description: string;
         button: {
-            text: string;
-            link: string;
+            text?: string;
+            link?: string;
         };
         image: {
             src: string;
