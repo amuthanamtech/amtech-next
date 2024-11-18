@@ -2,7 +2,7 @@ import type { NextRequest } from 'next/server'
 import nodemailer from 'nodemailer';
 // @ts-ignoreimport { getRequestContext } from '@cloudflare/next-on-pages'
 
-//export const runtime = 'edge'
+export const runtime = 'edge'
 // let transporter = nodemailer.createTransport({
 //   host: process.env.SMTP_HOST,
 //   port: parseInt(process.env.SMTP_PORT || '587'),
