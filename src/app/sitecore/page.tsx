@@ -37,8 +37,8 @@ export default function ServicePage() {
         <p>Whether you’re just starting with Sitecore or optimizing your existing implementation, our expert consultants ensure a seamless and scalable solution. From architecture design to custom integrations, we provide comprehensive services to help you leverage Sitecore’s full potential. We take care of the complexities, so you can focus on driving results.</p>
     `,
     button: {
-      // text: "Learn More",
-      // link: "/sitecore-consulting-implementation",
+      text: "",
+      link: "",
     },
     image: {
       src: "/assets/img/sitecore/sitecore-consulting-implementation.webp",
@@ -46,7 +46,7 @@ export default function ServicePage() {
       width: 800,
       height: 400
     },
-    imagePosition: "right"
+    imagePosition: "right" as const
 };
 
 const contentBlock2 = {
@@ -56,7 +56,7 @@ const contentBlock2 = {
       <p>Stay ahead of the curve with the latest advancements in Sitecore technology. Our team specializes in seamless upgrades, ensuring you take full advantage of Sitecore 10’s enhanced features, improved performance, and advanced capabilities, without any disruptions to your business.</p>
   `,
   button: {
-    // text: "Learn More",
+    text: "",
     // link: "/sitecore-upgrade",
   },
   image: {
@@ -65,7 +65,7 @@ const contentBlock2 = {
     width: 800,
     height: 400
   },
-  imagePosition: "left"
+  imagePosition: "left" as const
 };
 
 const contentBlock3 = {
@@ -75,7 +75,7 @@ const contentBlock3 = {
       <p>Our Sitecore Managed Services are designed to support your platform day-to-day, offering proactive monitoring, maintenance, updates, and troubleshooting. With our dedicated support, you’ll have peace of mind knowing your Sitecore platform is running smoothly, so you can focus on scaling your business.</p>
   `,
   button: {
-    // text: "Learn More",
+    text: "",
     // link: "/sitecore-managed-services",
   },
   image: {
@@ -84,7 +84,7 @@ const contentBlock3 = {
     width: 800,
     height: 400
   },
-  imagePosition: "right"
+  imagePosition: "right" as const
 };
 
 const contentBlock4 = {
@@ -94,7 +94,7 @@ const contentBlock4 = {
       <p>Our Sitecore-certified experts work alongside your marketing teams to develop effective strategies tailored to your unique business goals. From defining clear requirements to creating actionable roadmaps, we ensure your digital strategy aligns with both your customer needs and business objectives.</p>
   `,
   button: {
-    // text: "Learn More",
+    text: "",
     // link: "/sitecore-marketing-digital-strategy",
   },
   image: {
@@ -103,7 +103,7 @@ const contentBlock4 = {
     width: 800,
     height: 400
   },
-  imagePosition: "left"
+  imagePosition: "left" as const
 };
 
 const contentBlock5 = {
@@ -113,7 +113,7 @@ const contentBlock5 = {
       <p>Simplify and scale your eCommerce operations with Sitecore OrderCloud. Whether you need B2B, B2C, or multi-channel eCommerce solutions, our team ensures a robust and flexible implementation. From integration to custom development, we provide end-to-end support for a streamlined eCommerce experience.</p>
   `,
   button: {
-    // text: "Learn More",
+    text: "",
     // link: "/sitecore-ordercloud",
   },
   image: {
@@ -122,7 +122,7 @@ const contentBlock5 = {
     width: 800,
     height: 400
   },
-  imagePosition: "right"
+  imagePosition: "right" as const
 };
 
 const contentBlock6 = {
@@ -132,7 +132,7 @@ const contentBlock6 = {
       <p>Unlock deep customer insights with Sitecore Discover. This powerful tool helps you understand customer behavior and personalize experiences across channels. Our team will handle the integration and customization, enabling you to make data-driven decisions that enhance customer engagement and drive conversion.</p>
   `,
   button: {
-    // text: "Learn More",
+    text: "",
     // link: "/sitecore-discover",
   },
   image: {
@@ -141,7 +141,7 @@ const contentBlock6 = {
     width: 800,
     height: 400
   },
-  imagePosition: "left"
+  imagePosition: "left" as const
 };
 
 const contentBlock7 = {
@@ -151,7 +151,7 @@ const contentBlock7 = {
       <p>Manage and deliver consistent, personalized content at scale with Sitecore Content Hub. Our team will help you centralize content creation, storage, and distribution across channels to ensure your messages are always aligned with customer expectations. Streamline the entire content lifecycle, from ideation to publishing.</p>
   `,
   button: {
-    // text: "Learn More",
+    text: "",
     // link: "/sitecore-content-hub",
   },
   image: {
@@ -160,7 +160,7 @@ const contentBlock7 = {
     width: 800,
     height: 400
   },
-  imagePosition: "right"
+  imagePosition: "right" as const
 };
 
 const contentBlock8 = {
@@ -170,7 +170,7 @@ const contentBlock8 = {
       <p>Future-proof your content management with Sitecore XM Cloud, a headless, cloud-native CMS built to handle the most complex digital experiences. We’ll help you implement this flexible platform to create and manage content across multiple channels, all while offering scalability, security, and faster time-to-market.</p>
   `,
   button: {
-    // text: "Learn More",
+    text: "",
     // link: "/sitecore-xm-cloud",
   },
   image: {
@@ -179,7 +179,7 @@ const contentBlock8 = {
     width: 800,
     height: 400
   },
-  imagePosition: "left"
+  imagePosition: "left" as const
 };
 
 const contentBlock9 = {
@@ -189,8 +189,8 @@ const contentBlock9 = {
       <p>Unlock the power of AI-driven personalization with Sitecore Personalize. Powered by xDB, this solution allows you to deliver hyper-relevant experiences across all touchpoints. In just $30K, we’ll help you implement intelligent personalization, enhancing customer engagement and driving conversions like never before.</p>
   `,
   button: {
-    // text: "Learn More",
-    // link: "/sitecore-personalize-xdb",
+    text: "",
+    // link: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-personalize-xdb.webp",
@@ -198,7 +198,7 @@ const contentBlock9 = {
     width: 800,
     height: 400
   },
-  imagePosition: "right"
+  imagePosition: "right" as const
 };
 
 

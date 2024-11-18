@@ -73,8 +73,8 @@ export default function ServicePage() {
         </ol>        
     `,
     button: {
-      // text: "Learn More",
-      // link: "/staffing-process",
+      text: "",
+      link: "",
     },
     image: {
       src: "/assets/img/ourprocess/staffingprocess/staffing-process2.webp",
@@ -82,7 +82,7 @@ export default function ServicePage() {
       width: 800,
       height: 400,
     },
-    imagePosition: "right",
+    imagePosition: "right" as const
   };
 
   const contentBlock2 = {
@@ -110,8 +110,8 @@ export default function ServicePage() {
               </li>
           </ol>      `,
     button: {
-      // text: "Learn More",
-      // link: "/terms-and-conditions",
+      text: "",
+      link: "",
     },
     image: {
       src: "/assets/img/ourprocess/staffingprocess/staffing-terms.webp", // Replace with your uploaded file path if needed
@@ -119,7 +119,7 @@ export default function ServicePage() {
       width: 800,
       height: 400,
     },
-    imagePosition: "left",
+    imagePosition: "left" as const
   };
 
   return (

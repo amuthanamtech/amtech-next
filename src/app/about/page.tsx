@@ -20,12 +20,13 @@ export default function AboutUsPage() {
       alt: "Hero Banner",
       width: 500,
       height: 500,
+      enabled: false
     },
     backgroundImage: {
       src: "/assets/img/banner/background-purple.png",
       alt: "Background Image",
     },
-    imagePosition: "right",
+    imagePosition: "left" as const
   };
   return (
     <Layout>
