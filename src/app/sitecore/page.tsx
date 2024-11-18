@@ -57,7 +57,7 @@ const contentBlock2 = {
   `,
   button: {
     text: "",
-    // link: "/sitecore-upgrade",
+    link: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-upgrade.webp",
@@ -76,7 +76,7 @@ const contentBlock3 = {
   `,
   button: {
     text: "",
-    // link: "/sitecore-managed-services",
+    ink: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-managed-services.webp",
@@ -95,7 +95,7 @@ const contentBlock4 = {
   `,
   button: {
     text: "",
-    // link: "/sitecore-marketing-digital-strategy",
+    link: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-marketing-strategy.webp",
@@ -114,7 +114,7 @@ const contentBlock5 = {
   `,
   button: {
     text: "",
-    // link: "/sitecore-ordercloud",
+    link: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-ordercloud.webp",
@@ -133,7 +133,7 @@ const contentBlock6 = {
   `,
   button: {
     text: "",
-    // link: "/sitecore-discover",
+    link: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-discover.webp",
@@ -152,7 +152,7 @@ const contentBlock7 = {
   `,
   button: {
     text: "",
-    // link: "/sitecore-content-hub",
+    link: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-content-hub.webp",
@@ -171,7 +171,7 @@ const contentBlock8 = {
   `,
   button: {
     text: "",
-    // link: "/sitecore-xm-cloud",
+    link: "/sitecore-xm-cloud",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-xm-cloud.webp",
@@ -190,7 +190,7 @@ const contentBlock9 = {
   `,
   button: {
     text: "",
-    // link: "",
+    link: "",
   },
   image: {
     src: "/assets/img/sitecore/sitecore-personalize-xdb.webp",
