@@ -38,7 +38,7 @@ export default function AboutUsPage() {
     image: {
       src: "/assets/img/aboutus/aboutus2.webp",
       alt: "AmTech Digital Solutions Team",
-      position : "left",
+      position : "left" as const,
     },
     whoWeAre: {
       title: "Who We Are",
