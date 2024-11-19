@@ -36,35 +36,35 @@ export default function Home() {
         title: "Sitecore Content Hub",
         description: "Unify content planning, collaboration, production, and management into one integrated hub. Deliver content at scale across channels, from this centralized hub, and streamline the entire content lifecycle.",
         icon: "fa-code",
-        image: "/assets/img/sitecore/Content Hub.webp", // Replace with actual image paths
+        image: "/assets/img/sitecore/contenthub.webp", // Replace with actual image paths
         delay: "0.1s",
     },
     {
         title: "Sitecore Experience Platform",
         description: "Deliver a unique experience to each customer by accelerating personalization and auto-modifying page elements. Nurture customers better by combining data, AI, and marketing automation capabilities across channels.",
         icon: "fa-cogs",
-        image: "/assets/img/sitecore/Experience Plattform.webp",
+        image: "/assets/img/sitecore/experienceplattform.webp",
         delay: "0.2s",
     },
     {
         title: "Sitecore Experience Commerce",
         description: "Support omnichannel commerce by creating custom storefront experience with this headless architecture. Sync this highly configurable platform with old and new technology ecosystems seamlessly.",
         icon: "fa-cloud",
-        image: "/assets/img/sitecore/Experience Commerce.webp",
+        image: "/assets/img/sitecore/experiencecommerce.webp",
         delay: "0.3s",
     },
     {
         title: "Boxever",
         description: "Capture, unify, and activate customer data better with Sitecore’s Customer Data Platform. Use insights to transform your marketing efforts.",
         icon: "fa-chart-line",
-        image: "/assets/img/sitecore/Boxever_Image_536x370.webp",
+        image: "/assets/img/sitecore/boxever_Image_536x370.webp",
         delay: "0.4s",
     },
     {
       title: "OrderCloud",
       description: "Power custom eCommerce experience, order management, and digital marketplaces with an API-first, headless cloud platform, and create your own B2B, B2C, or B2X commerce store.",
       icon: "fa-chart-line",
-      image: "/assets/img/sitecore/Order Cloud.webp",
+      image: "/assets/img/sitecore/ordercloud.webp",
       delay: "0.4s",
   },
   {
