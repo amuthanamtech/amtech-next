@@ -3,8 +3,8 @@ import { Resend } from 'resend';
 
 export const runtime = 'edge';
 
-//const resend = new Resend(process.env.RESEND_API_KEY);
-const resend = new Resend('re_fxByhdHq_5DnBF1PSiiDAws8ksT6zFp9w');
+const resend = new Resend(process.env.RESEND_API_KEY);
+//const resend = new Resend('re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D');
 
 export async function POST(request: NextRequest) {
   try {
