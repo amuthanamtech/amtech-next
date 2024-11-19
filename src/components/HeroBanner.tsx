@@ -50,13 +50,12 @@ const HeroBanner = ({ content }: HeroBannerProps) => {
             >
                 <div className="px-lg-5">
                     <div className="row g-5 align-items-end">
-                        <div className={`col-lg-7 text-center text-lg-start ${contentOrder}`}>
+                        <div className={`col-lg-7 text-center text-lg-start ${contentOrder}`} style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', padding: '2rem', borderRadius: '10px' }}>
                             <h1 className="text-white mb-4 animated slideInDown">{content.title}</h1>
                             <p className="text-white pb-3 animated slideInDown">{content.description}</p>
                             <Link href={content.readMoreButton.link} className="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">{content.readMoreButton.text}</Link>
                             <Link href={content.contactButton.link} className="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">{content.contactButton.text}</Link>
-                        </div>
-                        <div className={`col-lg-5 text-center text-lg-start ${imageOrder}`}>
+                        </div>                        <div className={`col-lg-5 text-center text-lg-start ${imageOrder}`}>
                             {content.image.enabled && (
                                 <Image 
                                     src={content.image.src}

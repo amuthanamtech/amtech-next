@@ -5,9 +5,9 @@ import HeroBanner from "@/components/HeroBanner";
 export default function ServicePage() {
   const heroContent = {
     title:
-      "High-Quality  Talent for Immediate Placement – Tailored for Your IT Needs",
+      "Your Trusted Partner in Staffing Solutions",
     description:
-      " We understand the importance of finding the right talent quickly and effectively, and we are well-equipped to provide highly skilled professionals for your organization.",
+      "At AmTech Digital Solutions, we streamline the staffing process to connect businesses with top-tier talent efficiently and seamlessly. Our transparent and client-focused approach ensures that each step, from initial consultation to post-placement support, is designed to meet your unique requirements while maintaining the highest standards of professionalism, compliance, and confidentiality. Whether it's contract staffing or permanent placements, we deliver results that empower your success.",
     readMoreButton: {
       text: "Read More",
       link: "/",

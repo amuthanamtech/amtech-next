@@ -25,7 +25,7 @@ export default function Home() {
       enabled: false
     },
     backgroundImage: {
-      src: "/assets/img/banner/bnner-ourservices.jpg",
+      src: "/assets/img/banner/bnner-ourprojects.jpg",
       alt: "Background Image"
     },
     imagePosition: "left" as const
