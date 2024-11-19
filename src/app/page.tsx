@@ -57,7 +57,7 @@ export default function Home() {
         title: "Boxever",
         description: "Capture, unify, and activate customer data better with Sitecore’s Customer Data Platform. Use insights to transform your marketing efforts.",
         icon: "fa-chart-line",
-        image: "/assets/img/sitecore/boxever_Image_536x370.webp",
+        image: "/assets/img/sitecore/boxever.webp",
         delay: "0.4s",
     },
     {
