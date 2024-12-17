@@ -5,7 +5,7 @@ import HeroBanner from "@/components/HeroBanner";
 export default function ServicePage() {
   const heroContent = {
     title:
-      "High-Quality  Talent for Immediate Placement – Tailored for Your IT Needs",
+      "High-Quality Talent for Immediate Placement – Tailored for Your IT Needs",
     description:
       " We understand the importance of finding the right talent quickly and effectively, and we are well-equipped to provide highly skilled professionals for your organization.",
     readMoreButton: {
@@ -32,7 +32,7 @@ export default function ServicePage() {
 
   // Example usage data:
 const serviceData = {
-  title: "What Solutions We Provide",
+  title: "What Solutions We Provide for You",
   services: [
     {
       icon: "fa-user-tie",
