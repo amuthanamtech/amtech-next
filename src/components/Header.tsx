@@ -23,6 +23,8 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
     }
   };
 
+  
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 45) {
@@ -190,12 +192,13 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
               </div>
             </Link>
           </div>
-          <Link
-            href="/get-started"
-            className="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block"
-          >
-            Get Started
-          </Link>
+        <Link
+              href="/contact"
+              className={`bg-secondary btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block ${isActive("/contact") ? "active" : ""
+                }`}
+              onClick={handleLinkClick}
+            >Get Start
+            </Link>
         </div>{" "}
       </nav>
     </div>

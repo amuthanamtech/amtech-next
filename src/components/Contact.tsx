@@ -143,7 +143,7 @@ const Contact = () => {
                                     </div>
                                     <div className="col-12">
                                         <button 
-                                            className="btn btn-primary w-100 py-3" 
+                                            className="btn btn-secondary w-100 py-3" 
                                             type="submit"
                                             disabled={isLoading}
                                         >
