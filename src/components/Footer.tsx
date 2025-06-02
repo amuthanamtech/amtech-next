@@ -1,10 +1,60 @@
 "use client";
 
-import React from "react";
+import React, { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
+  const [email, setEmail] = useState('')
+    const [isLoading, setIsLoading] = useState(false)
+    const [message, setMessage] = useState('')
+    const [isSuccess, setIsSuccess] = useState(false)
+  
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault()
+      
+      if (!email.trim()) {
+        setMessage('Please enter your email address')
+        setIsSuccess(false)
+        return
+      }
+  
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailRegex.test(email)) {
+        setMessage('Please enter a valid email address')
+        setIsSuccess(false)
+        return
+      }
+  
+      setIsLoading(true)
+      setMessage('')
+      
+      try {
+        const response = await fetch('/api/newsletter', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email })
+        })
+  
+        if (response.ok) {
+          setEmail('')
+          setMessage('Thank you for subscribing!')
+          setIsSuccess(true)
+        } else {
+          setMessage('Failed to subscribe. Please try again.')
+          setIsSuccess(false)
+        }
+      } catch (error) {
+        console.error('Subscription error:', error)
+        setMessage('Network error. Please try again.')
+        setIsSuccess(false)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
   return (
     <div
       className="container-fluid bg-primary text-light footer wow fadeIn"
@@ -136,20 +186,27 @@ const Footer = () => {
               Subscribe to our newsletter today!
             </p>
             <div className="position-relative w-100 mt-3">
-              <input
-                id="YourEmail"
-                name="email"
-                className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
-                type="text"
-                placeholder="Your Email"
-                autoComplete="email"
-              />
-              <button
-                type="button"
-                className="btn shadow-none position-absolute top-0 end-0 mt-0 me-2"
-              >
-                <i className="fa fa-paper-plane text-primary fs-4"></i>
-              </button>
+               <form onSubmit={handleSubmit}>
+                <input 
+                  name="email" 
+                  className="form-control border-0 rounded-pill w-100 ps-4 pe-5"  
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  type="email" 
+                  placeholder="Enter Your Email" 
+                  autoComplete="email"
+                  style={{ height: '48px' }}
+                  disabled={isLoading}
+                />
+                <button 
+                  type="submit" 
+                  className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
+                  disabled={isLoading || !email.trim()} 
+                >
+                  {isLoading ? 'Subscribing...' : 'Subscribe'}
+                  <i className="fa fa-paper-plane text-primary fs-4 ms-1"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
