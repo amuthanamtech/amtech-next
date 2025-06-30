@@ -14,16 +14,25 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
-    "resend": "^4.0.1-alpha.0"
+    "@heroicons/react": "^2.2.0",
+    "better-sqlite3": "^12.2.0",
+    "classnames": "^2.5.1",
+    "firebase": "^11.9.1",
+    "firebase-hooks": "^0.0.1",
+    "formidable": "^3.5.4",
+    "next": "^15.3.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-phone-input-2": "^2.15.1",
+    "resend": "^4.0.1-alpha.0",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.5",
     "@cloudflare/workers-types": "^4.20241112.0",
-    "@types/node": "^20",
-    "@types/react": "^18",
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^20.19.1",
+    "@types/react": "^18.3.23",
     "@types/react-dom": "^18",
     "cross-env": "^7.0.3",
     "cross-env-shell": "^7.0.3",
