@@ -25,7 +25,7 @@ const MessageTable = () => {
   }, []);
 
   return (
-    <div className="p-4 overflow-auto">
+    <div className="p-4 overflow-auto" >
       <h2 className="text-xl font-bold mb-4">Submitted Profiles</h2>
       <table className="min-w-[1000px] border">
         <thead>

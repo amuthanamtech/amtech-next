@@ -41,7 +41,7 @@ export default function MessageTablePage() {
           }
 
         } catch (err) {
-          console.error('Failed to parse admin user:', err);
+          console.error('Failed  to parse admin user:', err);
           localStorage.removeItem('adminUser');
           router.replace('/admin'); // Redirect to login page
         }
