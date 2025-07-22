@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import {useRouter} from 'next/navigation';
 import MessageTable from '@/components/MessageTable'; // Your actual message table component
 
 // Define AdminUser type

@@ -89,7 +89,7 @@ export default function Adminloginpage() {
       }
 
       else {
-        setError('You are authenticated but  not registered as an admin.');
+        setError('You are  authenticated but  not registered as an admin.');
       }
 
     } catch (err: any) {

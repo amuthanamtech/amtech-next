@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function AdminService() {
   return (
-    <div  style={{
+    <div style={{
       minHeight: '100vh',
       backgroundColor: '#f3f4f6',
       padding: '20px'
