@@ -35,7 +35,7 @@ export async function POST(request: NextRequest) {
           <p>Dear ${name},</p>
           <p>Thank you for reaching out to us. We have received your message and will get back to you shortly.</p>
           <div style="background-color: #f5f5f5; padding: 15px; margin: 20px 0; border-radius: 5px;">
-            <h3>Your message details:</h3>
+            <h3>Your  message details:</h3>
             <p><strong>Message:</strong> ${message}</p>
           </div>
           <p>Best regards,<br>AmTech Digital Team</p>
