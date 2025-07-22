@@ -86,7 +86,7 @@ export default function MessageTablePage() {
           cursor: 'pointer'
         }}
       >
-        Logout
+        logout
       </button>
     </div>
   );

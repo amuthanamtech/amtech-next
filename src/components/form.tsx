@@ -86,7 +86,7 @@ const FormLogin = () => {
                 setIsUploading(false);
             }
 
-            alert("Form submitted successfully!");
+            alert("Form  submitted successfully!");
 
             setFormData({
                 firstName: "",

@@ -98,7 +98,7 @@ export default function Adminloginpage() {
       } else if (err.code === 'auth/wrong-password') {
         setError('Incorrect password.');
       } else {
-        setError('Login failed. Please try again.');
+        setError('Login  failed. Please try again.');
       }
     } finally {
       setIsLoading(false);
