@@ -79,7 +79,7 @@ const Contact = () => {
           <div className="col-lg-7">
             <div className="wow fadeInUp" data-wow-delay="0.3s">
               <p className="text-center mb-4">
-                We&apos;d love to hear from you! Whether you have a question, need support, or want to explore how we can help with your staffing or development needs, feel free to reach out. Our team is ready to assist you!
+                We&apos;d love to  hear from  you! Whether you have a question, need support, or want to explore how we can help with your staffing or development needs, feel free to reach out. Our team is ready to assist you!
               </p>
               <form onSubmit={handleSubmit}>
                 <div className="row g-3">
