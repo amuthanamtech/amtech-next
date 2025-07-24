@@ -39,7 +39,7 @@ const AboutUs = () => {
       <div className="py-5 px-lg-5">
         <div className="row g-5 align-items-center">
           <div className="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
-            <h1 className="mb-5">#1 Digital solution with 15 years of experience</h1>
+            <h1 className="mb-5">#1 Digital solution with 16 years of experience</h1>
             <p className="mb-4">
               For the past decade, we have been at the forefront of digital transformation, providing cutting-edge solutions that drive business success. Our expertise spans across various digital services, ensuring that our clients receive the most innovative and effective strategies tailored to their unique needs.
             </p>
