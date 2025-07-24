@@ -2,6 +2,7 @@
 name = "my-next-app"
 compatibility_date = "2024-11-12"
 compatibility_flags = ["nodejs_compat"]
+node_compat = true
 pages_build_output_dir = ".vercel/output/static"
 
 # Automatically place your workloads in an optimal location to minimize latency.
