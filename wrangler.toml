@@ -95,3 +95,7 @@ RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
 
 [env.production.vars]
 RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
+
+
+[pages]
+command = "npx @cloudflare/next-on-pages@1 --node-version 20"
