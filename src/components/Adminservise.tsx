@@ -31,7 +31,7 @@ export default function AdminService() {
           color: '#6b7280',
           fontSize: '16px'
         }}>
-          Welcome  to the Admin Service Panel!
+          Welcome to the Admin Service Panel!
         </p>
       </div>
     </div>

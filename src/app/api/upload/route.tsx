@@ -29,6 +29,7 @@ export async function POST(request: Request) {
         const filepath = path.join(uploadsDir, filename);
 
         // 5. Write file to uploads directory
+        
         await fs.promises.writeFile(filepath, buffer);
 
         // 6. Return success response

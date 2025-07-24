@@ -73,6 +73,7 @@ export default function MessageTablePage() {
       {/* Example: Logout button */}
       <button
         onClick={() => {
+          
           localStorage.removeItem('adminUser');
           router.replace('/admin');
         }}
