@@ -13,8 +13,10 @@
 /.next/
 /out/
 
+
 # production
 /build
+
 
 # misc
 .DS_Store
@@ -38,3 +40,4 @@ next-env.d.ts
 # wrangler files
 .wrangler
 .dev.vars
+package-lock.json

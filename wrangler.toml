@@ -95,3 +95,10 @@ RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
 
 [env.production.vars]
 RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
+
+
+[build]
+command = "npm run build"
+
+[build.environment]
+NODE_VERSION = "20.0.0"

@@ -77,7 +77,7 @@ const FormLogin = () => {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
 
-                const data = await response.json();
+                const data = await response.json() as { filename: string };
                 setMessage(`File uploaded successfully: ${data.filename}`);
             } catch (error) {
                 console.error('Upload error:', error);
@@ -86,7 +86,7 @@ const FormLogin = () => {
                 setIsUploading(false);
             }
 
-            alert("Form submitted successfully!");
+            alert("Form  submitted  successfully!");
 
             setFormData({
                 firstName: "",
