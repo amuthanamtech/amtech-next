@@ -91,7 +91,7 @@ export default function Home() {
         title: "Staffing Solution",
         description:
           "Focused on quality, we manage the staffing lifecycle from sourcing to post-placement support.",
-        link: "",
+        link: "/process",
         delay: "0.1s",
       },
       {
@@ -99,7 +99,7 @@ export default function Home() {
         title: "Content Management Systems (CMS)",
         description:
           "Implement and optimize CMS solutions for seamless content updates and management.",
-        link: "",
+        link: "/cms",
         delay: "0.1s",
       },
       {
@@ -107,7 +107,7 @@ export default function Home() {
         title: "SEO Optimization",
         description:
           "Optimize search rankings with quality backlinks and targeted keyword strategies.",
-        link: "/",
+        link: "/seo",
         delay: "0.1s",
       },
       {
@@ -115,7 +115,7 @@ export default function Home() {
         title: "Design & Development",
         description:
           "Create visually stunning and functional websites tailored to your business needs.",
-        link: "",
+        link: "/DesignDevelopment",
         delay: "0.3s",
       },
       {
@@ -123,7 +123,7 @@ export default function Home() {
         title: "Maintenance & Support",
         description:
           "Ongoing website maintenance and support to ensure optimal performance and security.",
-        link: "",
+        link: "/MaintenanceSupport",
         delay: "0.5s",
       },
       {
@@ -131,7 +131,7 @@ export default function Home() {
         title: "IT Consulting",
         description:
           "Expert advice and strategies to align technology with business goals.",
-        link: "",
+        link: "/consulting",
         delay: "0.3s",
       },
       {
@@ -139,7 +139,7 @@ export default function Home() {
         title: "App Development",
         description:
           "Design and develop intuitive mobile applications for iOS and Android platforms.",
-        link: "",
+        link: "/AppDevelopment",
         delay: "0.5s",
       },
     ],
