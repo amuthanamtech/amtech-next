@@ -92,7 +92,7 @@ export default function DesignDevelopmentPage() {
         },
         image: {
            src: "/assets/img/newimage/20945227.jpg",
-            alt: "Performance Optimization",
+            alt: "Performance the Optimization",
             width: 800,
             height: 400,
         },
