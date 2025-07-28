@@ -35,24 +35,21 @@ export default function DesignDevelopmentPage() {
         title: "Custom Design",
         subtitle: "Unique and brand-aligned",
         description: `
-            <p>We create designs that reflect your brand identity and engage your audience through intuitive interfaces and compelling visuals.</p>
-            <ul>
-                <li>User-centered UX design</li>
-                <li>Modern UI with accessibility in mind</li>
-                <li>Consistent visual storytelling</li>
-            </ul>
-        `,
+      <p>We create designs that reflect your brand identity and engage your audience through intuitive interfaces and compelling visuals.</p>
+    `,
         button: {
             text: "See Portfolio",
             link: "/portfolio",
         },
         image: {
-           src: "/assets/img/newimage/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg",
+            src: "/assets/img/newimage/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg",
+            alt: "Custom Web Design",
             width: 800,
             height: 400,
         },
         imagePosition: "right" as const,
     };
+
 
     const contentBlock2 = {
         title: "Responsive Development",
