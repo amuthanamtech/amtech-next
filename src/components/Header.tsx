@@ -53,14 +53,14 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
         `}
       >
         <div className="rounded-3 bg-white">
-          <Image
+          <Link href={"/"}><Image
             src="/assets/img/logo-whiteBackground.png"
             alt="Logo"
             width={95}
             height={95}
             priority
             className="p-2"
-          />
+          /></Link>
         </div>
         <button
           className="navbar-toggler"
