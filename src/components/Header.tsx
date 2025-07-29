@@ -23,7 +23,7 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
     }
   };
 
-  
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,22 +45,22 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
     >
       <nav
         className={`navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 ${isScrolled
-            ? "sticky-top shadow-sm bg-white"
-            : bgTransparent
-              ? "bg-transparent"
-              : "sticky-top shadow-sm bg-white"
+          ? "sticky-top shadow-sm bg-white"
+          : bgTransparent
+            ? "bg-transparent"
+            : "sticky-top shadow-sm bg-white"
           }
         `}
       >
         <div className="rounded-3 bg-white">
-          <Image
-            src="/assets/img/logo-whiteBackground.png"
-            alt="Logo"
-            width={95}
-            height={95}
-            priority
-            className="p-2"
-          />
+            <Link href={"/"}><Image
+              src="/assets/img/logo-whiteBackground.png"
+              alt="Logo"
+              width={95}
+              height={95}
+              priority
+              className="p-2"
+            /></Link>
         </div>
         <button
           className="navbar-toggler"
@@ -106,7 +106,7 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
                 </div>
               </a>
               <div className="dropdown-menu m-0">
-              <Link
+                <Link
                   href="/process"
                   className="dropdown-item"
                   onClick={handleLinkClick}
@@ -192,13 +192,13 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
               </div>
             </Link>
           </div>
-        <Link
-              href="/contact"
-              className={`bg-secondary btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block ${isActive("/contact") ? "active" : ""
-                }`}
-              onClick={handleLinkClick}
-            >Get Start
-            </Link>
+          <Link
+            href="/contact"
+            className={`bg-secondary btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block ${isActive("/contact") ? "active" : ""
+              }`}
+            onClick={handleLinkClick}
+          >Get Start
+          </Link>
         </div>{" "}
       </nav>
     </div>
