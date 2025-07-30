@@ -13,14 +13,17 @@ interface HeaderProps {
 const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const isActive = (path: string) => pathname === path;
 
   const handleLinkClick = () => {
+    setIsMenuOpen(false);
     const navbarToggler = document.getElementById("navbarCollapse");
     if (navbarToggler?.classList.contains("show")) {
       navbarToggler.classList.remove("show");
     }
+
   };
 
 
@@ -53,29 +56,32 @@ const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
         `}
       >
         <div className="rounded-3 bg-white">
-            <Link href={"/"}><Image
-              src="/assets/img/logo-whiteBackground.png"
-              alt="Logo"
-              width={95}
-              height={95}
-              priority
-              className="p-2"
-            /></Link>
+          <Link href={"/"}><Image
+            src="/assets/img/logo-whiteBackground.png"
+            alt="Logo"
+            width={95}
+            height={95}
+            priority
+            className="p-2"
+          /></Link>
         </div>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler lg:hidden"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <span className="fa fa-bars"></span>
         </button>
-        <div className="navbar-collapse" id="navbarCollapse">
-          <div className="navbar-nav mx-auto py-0">
+        <div
+          className={`navbar-collapse ${isMenuOpen ? "block" : "hidden"} lg:flex lg:items-center lg:justify-between`}
+          id="navbarCollapse"
+        >
+          <div className="navbar-nav mx-auto py-0 flex flex-col lg:flex-row">
             <Link
               href="/"
-              className={`nav-item nav-link mx-3 ${isActive("/") ? "active" : ""
-                }`}
+              className={`nav-item nav-link mx-3 ${isActive("/") ? "active" : ""}`}
               onClick={handleLinkClick}
             >
               <div className={isActive("/") ? "rounded-pill active" : ""}>
