@@ -12,6 +12,8 @@ import FeatureListing from '@/components/FeatureListing';
 import Projects from '@/components/Projects';
 import AboutUs from '@/components/AboutUs';
 
+
+
 const slideContent = [
   {
     image: "/assets/img/banner/banner2.jpg",
@@ -169,6 +171,8 @@ const serviceData = {
     },
   ],
 };
+
+
 const SwiperCarousel = () => {
   return (
     <main>
