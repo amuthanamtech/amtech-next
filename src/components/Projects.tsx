@@ -11,7 +11,7 @@ const Projects = () => {
     {
       id: 1,
       category: 'first',
-      image: "/assets/img/newimage/Sitecore Manage.jpg",
+      image: "/assets/img/newimage/Sitecore-Manage.jpg",
       dataWowDelay: '0.1s',
       title: 'Sitecore Manage Services',
       description: 'Ongoing management and maintenance of Sitecore platform, ensuring optimal performance and uptime.',
@@ -20,14 +20,14 @@ const Projects = () => {
       id: 2,
       category: 'second',
       dataWowDelay: '0.3s',
-      image: "/assets/img/newimage/Sitecore Manage6.jpg",
+      image: "/assets/img/newimage/Sitecore-Manage6.jpg",
       title: 'Sitecore Upgrade',
       description: 'Successfully upgraded to the latest Sitecore version, enhancing features and improving security.',
     },
     {
       id: 3,
       category: 'first',
-      image: "/assets/img/newimage/Sitecore Manage4.jpg",
+      image: "/assets/img/newimage/Sitecore-Manage4.jpg",
       dataWowDelay: '0.5s',
       title: 'Sitecore XM Cloud Migration',
       description: 'Migrated to Sitecore XM Cloud for better scalability and cloud-native capabilities.',
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       id: 4,
       category: 'second',
-      image: "/assets/img/newimage/Sitecore Manage3.jpg",
+      image: "/assets/img/newimage/Sitecore-Manage3.jpg",
       dataWowDelay: '0.1s',
       title: 'Coveo Search Implementation',
       description: 'Integrated Coveo Search for advanced, AI-powered search capabilities, enhancing user experience and content discoverability.',
@@ -43,7 +43,7 @@ const Projects = () => {
     {
       id: 5,
       category: 'first',
-      image: "/assets/img/newimage/Sitecore Manage9.jpg",
+      image: "/assets/img/newimage/Sitecore-Manage9.jpg",
       dataWowDelay: '0.3s',
       title: 'Content Hub Integration',
       description: 'Seamlessly integrated Sitecore Content Hub, centralizing content management and streamlining workflows.',
@@ -51,7 +51,7 @@ const Projects = () => {
     {
       id: 6,
       category: 'second',
-      image: "/assets/img/newimage/Sitecore Manage1.jpg",
+      image: "/assets/img/newimage/Sitecore-Manage1.jpg",
       dataWowDelay: '0.5s',
       title: 'Audit and Revamping',
       description: 'Conducted a comprehensive site audit and revamping, addressing technical debt and improving overall site performance.',

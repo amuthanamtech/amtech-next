@@ -115,7 +115,7 @@ const Footer = () => {
             <div className="row g-2">
               <div className="col-4">
                 <Image
-                  src="/assets/img/newimage/Sitecore Manage.jpg"
+                  src="/assets/img/newimage/Sitecore-Manage.jpg"
                   width={100}
                   height={100}
                   alt="Image"
@@ -124,17 +124,7 @@ const Footer = () => {
               </div>
               <div className="col-4">
                 <Image
-                  src="/assets/img/newimage/Sitecore Manage6.jpg"
-                  width={100}
-                  height={100}
-                  alt="Image"
-                  className="img-fluid"
-                  priority
-                />
-              </div>
-              <div className="col-4">
-                <Image
-                  src="/assets/img/newimage/Sitecore Manage4.jpg"
+                  src="/assets/img/newimage/Sitecore-Manage6.jpg"
                   width={100}
                   height={100}
                   alt="Image"
@@ -144,7 +134,7 @@ const Footer = () => {
               </div>
               <div className="col-4">
                 <Image
-                  src="/assets/img/newimage/Sitecore Manage4.jpg"
+                  src="/assets/img/newimage/Sitecore-Manage4.jpg"
                   width={100}
                   height={100}
                   alt="Image"
@@ -154,7 +144,7 @@ const Footer = () => {
               </div>
               <div className="col-4">
                 <Image
-                  src="/assets/img/newimage/Sitecore Manage3.jpg"
+                  src="/assets/img/newimage/Sitecore-Manage4.jpg"
                   width={100}
                   height={100}
                   alt="Image"
@@ -164,7 +154,17 @@ const Footer = () => {
               </div>
               <div className="col-4">
                 <Image
-                  src="/assets/img/newimage/Sitecore Manage1.jpg"
+                  src="/assets/img/newimage/Sitecore-Manage3.jpg"
+                  width={100}
+                  height={100}
+                  alt="Image"
+                  className="img-fluid"
+                  priority
+                />
+              </div>
+              <div className="col-4">
+                <Image
+                  src="/assets/img/newimage/Sitecore-Manage1.jpg"
                   width={100}
                   height={100}
                   alt="Image"
