@@ -3,6 +3,8 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const Footer = () => {
   const [email, setEmail] = useState('')
@@ -70,10 +72,10 @@ const Footer = () => {
               <i className="fa fa-map-marker-alt me-3"></i>US,
               30 N Gould St Ste R Sheridan, WY 82801
             </p>
-             <p>
+            <p>
               <i className="fa fa-map-marker-alt me-3"></i>United
               Arab Emirates, Compass Building, Al
-              Shohada Road, AL Hamra Industrial Zone-FZ,Ras Al Khaimah, 
+              Shohada Road, AL Hamra Industrial Zone-FZ,Ras Al Khaimah,
             </p>
             <p>
               <i className="fa fa-map-marker-alt me-3"></i>India, MRN Nagar
@@ -197,12 +199,11 @@ const Footer = () => {
                   className="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"
                   disabled={isLoading || !email.trim()}
                 >
-                  {isLoading ? 'Subscribing...' : 'Subscribe'}
                   <i className="fa fa-paper-plane text-primary fs-4 ms-1"></i>
                 </button>
               </form>
             </div>
-            <div className="d-flex pt-3 mt-4 mx-5">
+            <div className="d-flex pt-3 mt-4 mx-4">
               <a className="btn btn-outline-light btn-social" href="https://x.com/Amtech_Digital_" target='_blank'>
                 <i className="fab fa-twitter"></i>
               </a>
@@ -215,14 +216,16 @@ const Footer = () => {
               <a className="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/amtech-digital-solutions" target='_blank'>
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a
-                className="btn btn-outline-light btn-social"
-                href="https://www.tiktok.com/tiktokstudio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              
+              <a className="btn btn-outline-light btn-social" href="https://www.tiktok.com/@yourusername" target="_blank">
                 <i className="fab fa-tiktok"></i>
               </a>
+
+              <a className="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UCnWkvvtCU7gCK38E5Gu6TdQ" target="_blank">
+                <i className="fab fa-youtube"></i>
+              </a>
+
+
             </div>
           </div>
         </div>

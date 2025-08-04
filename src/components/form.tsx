@@ -28,6 +28,7 @@ const FormLogin = () => {
         noticePeriod: "",
         referralNote: "",
     });
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
     const [file, setFile] = useState<File | null>(null);
     const [isLoading, setIsLoading] = useState(false);
@@ -87,6 +88,8 @@ const FormLogin = () => {
             }
 
             alert("Form submitted successfully!");
+            setShowSuccessMessage(true); // Show success message
+
 
             setFormData({
                 firstName: "",
@@ -129,11 +132,18 @@ const FormLogin = () => {
                             country={'in'}
                             value={formData.phone}
                             onChange={handlePhoneChange}
-                            inputProps={{ name: 'phone', required: true, id: 'phone' }}
-                            inputClass="!w-full !pl-14 !pr-5 !py-4 !border !rounded !text-black placeholder-gray-400 !text-sm"
+                            inputProps={{
+                                name: 'phone',
+                                required: true,
+                                id: 'phone',
+                            }}
+                            containerClass="w-full"
+                            inputClass="!w-full !h-[48px] !pl-[58px] !pr-4 !text-sm !rounded-md !border !border-gray-300 !text-black placeholder-gray-400 focus:!outline-none focus:!ring-2 focus:!ring-violet-500 mt-5"
+                            buttonClass="!h-[48px] !border !border-r-0 !border-gray-300 !bg-white !rounded-l-md flex items-center justify-center"
+                            dropdownClass="!z-[9999]"
                         />
-                    </div>
 
+                    </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <select id="experienceTotal" value={formData.experienceTotal} onChange={handleInputChange} className="p-2 border rounded">
                             <option value="">Total Experience (years)</option>
@@ -204,14 +214,23 @@ const FormLogin = () => {
                         <input type="file" id="file" accept=".pdf,.doc,.docx" onChange={handleFileChange} className="hidden" />
                     </div>
 
-                    <button
-                        type="submit"
-                        disabled={isLoading}
-                        className="bg-secondary w-full  text-black py-3 rounded hover:bg-secondary transition"
-                    >
-                        {isLoading ? "Submitting..." : "Submit Profile"}
-                    </button>
+                    <div className="flex justify-center mt-4">
+                        <button
+                            type="submit"
+                            disabled={isLoading}
+                            className="bg-secondary text-black py-2 px-5 rounded-md text-sm hover:bg-secondary transition"
+                        >
+                            {isLoading ? "Submitting..." : "Submit Profile"}
+                        </button>
+                    </div>
+
                 </form>
+                {showSuccessMessage && (
+                    <div className="mt-6 text-green-600 text-center font-semibold">
+                        ✅ Your profile has been submitted successfully!
+                    </div>
+                )}
+
             </div>
         </div>
     );

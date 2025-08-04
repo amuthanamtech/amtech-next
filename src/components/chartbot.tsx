@@ -136,7 +136,7 @@ export default function TechAssistantChat() {
           <span className="text-xl">✕</span>
         ) : (
           <>
-            <span className="text-[30px] ">💭</span>
+            <span className="text-[30px] hover:text-pink-400 hover:scale-110 transition-all duration-200">💬</span>
           </>
         )}
       </button>
