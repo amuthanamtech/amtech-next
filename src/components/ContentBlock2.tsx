@@ -39,7 +39,7 @@ const TalentPoolOverview: React.FC<TalentPoolProps> = ({
       <div className="flex flex-row items-start gap-8 mt-8">
         <div className="w-1/2">
           <Image 
-            src={imagePath}
+            src="/assets/img/newimage/image5.jpg"
             alt={imageAlt}
             width={800}
             height={400}

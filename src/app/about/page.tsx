@@ -24,7 +24,7 @@ export default function AboutUsPage() {
       enabled: false,
     },
     backgroundImage: {
-      src: "/assets/img/banner/banner-aboutus.webp",
+      src: "/assets/img/newimage/1.png",
       alt: "Background Image",
     },
     imagePosition: "left" as const,

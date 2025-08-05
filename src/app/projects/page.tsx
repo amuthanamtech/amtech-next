@@ -24,7 +24,7 @@ export default function ProjectsPage() {
       enabled: false,
     },
     backgroundImage: {
-      src: "/assets/img/banner/banner-our-projects3.webp",
+      src: "/assets/img/newimage/image15.jpg",
       alt: "Background Image",
     },
     imagePosition: "left" as const,

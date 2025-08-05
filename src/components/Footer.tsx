@@ -78,8 +78,7 @@ const Footer = () => {
               Shohada Road, AL Hamra Industrial Zone-FZ,Ras Al Khaimah,
             </p>
             <p>
-              <i className="fa fa-map-marker-alt me-3"></i>India, MRN Nagar
-              Kallakurichi, Tamil Nadu
+              <i className="fa fa-map-marker-alt me-3"></i>India, chennai , Tamil Nadu
             </p>
             <p>
               <i className="fa fa-envelope me-3"></i>hr@amtechdigital.co
