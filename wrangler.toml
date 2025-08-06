@@ -95,3 +95,17 @@ RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
 
 [env.production.vars]
 RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
+
+name = "my-chatbot"
+main = "src/index.ts"
+compatibility_date = "2025-08-06"
+pages_build_output_dir = ".vercel/output/static" 
+
+[vars]
+GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+[[services]]
+binding = "GROQ_API_KEY"
+type = "secret"
+
+
