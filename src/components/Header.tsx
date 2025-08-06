@@ -10,7 +10,7 @@ interface HeaderProps {
   isOverlay?: boolean;
 }
 
-const Header = ({ bgTransparent = true, isOverlay = false }: HeaderProps) => {
+const Header = ({ bgTransparent = false, isOverlay = false }: HeaderProps) => {
   const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);

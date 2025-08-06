@@ -77,7 +77,7 @@ export default function ServicePage() {
       link: "",
     },
     image: {
-      src: "/assets/img/ourprocess/staffingprocess/staffing-process2.webp",
+      src: "/assets/img/newimage/5.png",
       alt: "Staffing Process Overview",
       width: 800,
       height: 400,
@@ -114,7 +114,7 @@ export default function ServicePage() {
       link: "",
     },
     image: {
-      src: "/assets/img/ourprocess/staffingprocess/staffing-terms.webp", // Replace with your uploaded file path if needed
+      src: "/assets/img/newimage/women-working-together-medium-shot.jpg", // Replace with your uploaded file path if needed
       alt: "Terms and Conditions for Engagement",
       width: 800,
       height: 400,

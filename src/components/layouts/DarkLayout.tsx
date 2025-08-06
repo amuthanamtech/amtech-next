@@ -10,7 +10,7 @@ export default function DarkLayout({
 }) {
   return (
     <div className="dark-theme">
-      <Header bgTransparent={true} isOverlay={false} />
+      <Header bgTransparent={false} isOverlay={false} />
       {children}
     </div>
   )

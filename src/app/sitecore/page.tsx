@@ -41,7 +41,7 @@ export default function ServicePage() {
       link: "",
     },
     image: {
-      src: "/assets/img/sitecore/sitecore-consulting-implementation.webp",
+      src: "/assets/img/newimage/Experienced-Tech-Talent-Available-to-Hire.png",
       alt: "Sitecore Consulting and Implementation",
       width: 800,
       height: 400
@@ -174,7 +174,7 @@ const contentBlock8 = {
     link: "/sitecore-xm-cloud",
   },
   image: {
-    src: "/assets/img/sitecore/sitecore-xm-cloud.webp",
+    src: "/assets/img/newimage/Experienced-Tech-Talent-Available.png",
     alt: "Sitecore XM Cloud Headless CMS",
     width: 800,
     height: 400
@@ -193,7 +193,7 @@ const contentBlock9 = {
     link: "",
   },
   image: {
-    src: "/assets/img/sitecore/sitecore-personalize-xdb.webp",
+    src: "/assets/img/newimage/Experienced-Tech-Talent.png",
     alt: "Sitecore Personalize with xDB",
     width: 800,
     height: 400
