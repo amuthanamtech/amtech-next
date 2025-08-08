@@ -109,3 +109,26 @@ binding = "GROQ_API_KEY"
 type = "secret"
 
 
+# wrangler.toml
+name = "my-next-app"
+compatibility_date = "2024-11-12"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+# Global variables
+[vars]
+RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
+GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# Preview environment overrides
+[env.preview]
+vars = { RESEND_API_KEY = "preview_key_here" }
+
+# Production environment overrides
+[env.production]
+vars = { RESEND_API_KEY = "production_key_here" }
+
+# Service binding (corrected format)
+[[services]]
+binding = "GROQ_API_KEY"
+service = "my-service"  # Replace with actual service name
