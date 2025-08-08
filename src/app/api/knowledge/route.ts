@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import path from "path";
 import fs from "fs";
 
-export const runtime = 'edge';
+
 export async function GET(request: NextRequest) {
   try {
     const filePath = path.join(process.cwd(), "data", "knowledge.md");
