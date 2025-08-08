@@ -22,6 +22,13 @@ const slideContent = [
     button1: { text: "Read More", link: "/" },
     button2: { text: "Contact Us", link: "/contact" },
   },
+ {
+    image: "/assets/img/banner/bnner-ourservices.jpg",
+    title: "Technical Expertise",
+    description: "Leverage our technical expertise for your digital success.",
+    button1: { text: "Read More", link: "/" },
+    button2: { text: "Contact Us", link: "/contact" },
+  },
   {
     image: "/assets/img/banner/banner4.jpg",
     title: "Digital Transformation",
@@ -37,16 +44,9 @@ const slideContent = [
     button2: { text: "Contact Us", link: "/contact" },
   },
   {
-    image: "/assets/img/banner/bnner-ourservices.jpg",
+    image:  "/assets/img/banner/banner5.jpg",
     title: "Technical Expertise",
     description: "Leverage our technical expertise for your digital success.",
-    button1: { text: "Read More", link: "/" },
-    button2: { text: "Contact Us", link: "/contact" },
-  },
-  {
-    image: "/assets/img/newimage/marvin-meyer-SYTO3xs06fU-unsplash.jpg",
-    title: "Top Talent Solutions",
-    description: "Access our pool of skilled professionals for your projects.",
     button1: { text: "Read More", link: "/" },
     button2: { text: "Contact Us", link: "/contact" },
   },
@@ -57,6 +57,7 @@ const slideContent = [
     button1: { text: "Read More", link: "/" },
     button2: { text: "Contact Us", link: "/contact" },
   },
+   
 ];
 
 const featureList = [
@@ -178,7 +179,7 @@ const SwiperCarousel = () => {
     <main>
       <Header bgTransparent={false} isOverlay={false} />
 
-      <div className="relative w-full h-[600px] lg:!mt-[100px]">
+      <div className="overflow-x-hidden relative w-full h-[600px] lg:!mt-[100px]">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={0}
