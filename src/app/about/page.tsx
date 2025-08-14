@@ -36,7 +36,7 @@ export default function AboutUsPage() {
     description:
       "Empowering businesses with cutting-edge technology solutions and top-notch talent. We specialize in digital transformation, enterprise-grade software development, and innovative staffing solutions tailored to your needs.",
     image: {
-      src: "/assets/img/newimage/2.png",
+      src: "/assets/img/newimage/2.jpg",
       alt: "AmTech Digital Solutions Team",
       position : "left" as const,
     },

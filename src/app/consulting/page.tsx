@@ -77,7 +77,7 @@ export default function ServicePage() {
       link: "",
     },
     image: {
-      src: "/assets/img/newimage/5.png",
+      src: "/assets/img/newimage/5.jpg",
       alt: "Staffing Process Overview",
       width: 800,
       height: 400,

@@ -78,7 +78,7 @@ export default function ServicePage() {
       link: "",
     },
     image: {
-      src: "/assets/img/newimage/5.png",
+      src: "/assets/img/newimage/5.jpg",
       alt: "Staffing Process Overview",
       width: 800,
       height: 400,
@@ -115,7 +115,7 @@ export default function ServicePage() {
       link: "",
     },
     image: {
-      src: "/assets/img/newimage/41.png", // Replace with your uploaded file path if needed
+      src: "/assets/img/newimage/41.jpg", // Replace with your uploaded file path if needed
       alt: "Terms and Conditions for Engagement",
       width: 800,
       height: 400,

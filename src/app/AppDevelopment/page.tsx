@@ -94,7 +94,7 @@ export default function AppDevelopmentPage() {
             link: "/design",
         },
         image: {
-            src: "/assets/img/newimage/Tiny programmers on big laptop writing script.jpg",
+            src: "/assets/img/newimage/Tiny-programmers-on-big-laptop-writing-script.jpg",
             alt: "App UI/UX Design",
             width: 800,
             height: 500,
