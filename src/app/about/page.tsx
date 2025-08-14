@@ -24,7 +24,7 @@ export default function AboutUsPage() {
       enabled: false,
     },
     backgroundImage: {
-      src: "/assets/img/newimage/1.png",
+      src: "/assets/img/newimage/1.jpg",
       alt: "Background Image",
     },
     imagePosition: "left" as const,

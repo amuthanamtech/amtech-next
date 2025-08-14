@@ -25,7 +25,7 @@ export default function ServicePage() {
       enabled: false,
     },
     backgroundImage: {
-      src: "/assets/img/newimage/Process.png",
+      src: "/assets/img/newimage/Process.jpg",
       alt: "Background Image",
     },
     imagePosition: "left" as const,
