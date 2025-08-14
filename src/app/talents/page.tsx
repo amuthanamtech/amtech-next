@@ -2,6 +2,7 @@ import Layout from "@/components/layouts/DarkLayout";
 import Service from "@/components/Service";
 import HeroBanner from "@/components/HeroBanner";
 import ContentBlock2 from "@/components/ContentBlock2";
+import StackingCards from "@/components/StackingCards";
 
 export default function ServicePage() {
   const heroContent = {
@@ -196,6 +197,7 @@ export default function ServicePage() {
     <Layout>
       <main>
         <HeroBanner content={heroContent} />
+        <StackingCards />
         <ContentBlock2 {...talentPoolContent} />
         <Service content={serviceData} />
       </main>

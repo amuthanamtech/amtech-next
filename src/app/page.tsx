@@ -22,7 +22,7 @@ const slideContent = [
     button1: { text: "Read More", link: "/" },
     button2: { text: "Contact Us", link: "/contact" },
   },
- {
+  {
     image: "/assets/img/banner/bnner-ourservices.jpg",
     title: "Technical Expertise",
     description: "Leverage our technical expertise for your digital success.",
@@ -44,7 +44,7 @@ const slideContent = [
     button2: { text: "Contact Us", link: "/contact" },
   },
   {
-    image:  "/assets/img/banner/banner5.jpg",
+    image: "/assets/img/banner/banner5.jpg",
     title: "Technical Expertise",
     description: "Leverage our technical expertise for your digital success.",
     button1: { text: "Read More", link: "/" },
@@ -57,7 +57,7 @@ const slideContent = [
     button1: { text: "Read More", link: "/" },
     button2: { text: "Contact Us", link: "/contact" },
   },
-   
+
 ];
 
 const featureList = [
@@ -184,8 +184,14 @@ const SwiperCarousel = () => {
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={0}
           slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
+          navigation={{
+            nextEl: '.custom-next',
+            prevEl: '.custom-prev',
+          }}
+          pagination={{
+            clickable: true,
+            el: '.custom-pagination',
+          }}
           autoplay={{ delay: 10000 }}
           loop
           className="h-full"
@@ -200,10 +206,9 @@ const SwiperCarousel = () => {
                   className="w-full h-full object-cover object-left md:object-center"
                 />
 
-
                 {/* Right-Aligned Banner */}
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center md:justify-end px-4 md:px-10 py-6">
-<div className="text-white w-full md:max-w-md text-center md:text-right space-y-4 overflow-hidden px-4 lg:px-0 lg:mx-[300px]">
+                  <div className="text-white w-full md:max-w-md text-center md:text-right space-y-4 overflow-hidden px-4 lg:px-0 lg:mx-[300px]">
                     {/* Title + Description */}
                     <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-snug">
                       {slide.title}
@@ -227,12 +232,31 @@ const SwiperCarousel = () => {
                         {slide.button2.text}
                       </a>
                     </div>
-
                   </div>
                 </div>
               </div>
             </SwiperSlide>
           ))}
+
+          {/* Custom Navigation & Pagination Container */}
+          <div className="absolute bottom-4 left-0 right-0 z-10 flex items-center justify-center space-x-6">
+            {/* Custom Prev Button */}
+            <div className="custom-prev cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </div>
+
+            {/* Custom Pagination */}
+            <div className="custom-pagination flex space-x-2 !w-auto"></div>
+
+            {/* Custom Next Button */}
+            <div className="custom-next cursor-pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-white hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </div>
         </Swiper>
       </div>
 

@@ -1,6 +1,7 @@
 import Layout from "@/components/layouts/LightLayout";
 import ContentBlock from "@/components/ContentBlock";
 import HeroBanner from "@/components/HeroBanner";
+import StackingCards2 from "@/components/StackingCards2";
 
 export default function ServicePage() {
   const heroContent = {
@@ -128,6 +129,7 @@ export default function ServicePage() {
         <HeroBanner content={heroContent} />
         <ContentBlock content={contentBlock} />
         <ContentBlock content={contentBlock2} />
+        <StackingCards2 />
       </main>
     </Layout>
   );
