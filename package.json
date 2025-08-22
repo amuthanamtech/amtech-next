@@ -16,13 +16,14 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
     "@heroicons/react": "^2.2.0",
+    "@studio-freight/lenis": "^1.0.42",
     "better-sqlite3": "^12.2.0",
     "classnames": "^2.5.1",
     "firebase": "^11.9.1",
     "firebase-hooks": "^0.0.1",
     "formidable": "^3.5.4",
     "framer-motion": "^12.23.12",
-    "next": "^15.3.4",
+    "next": "^15.5.0",
     "openai": "^5.12.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -30,6 +31,7 @@
     "react-phone-input-2": "^2.15.1",
     "react-slick": "^0.30.3",
     "resend": "^4.0.1-alpha.0",
+    "sass": "^1.90.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.2.10",
     "uuid": "^11.1.0"

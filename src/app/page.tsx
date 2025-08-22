@@ -11,6 +11,7 @@ import Service from '@/components/Service';
 import FeatureListing from '@/components/FeatureListing';
 import Projects from '@/components/Projects';
 import AboutUs from '@/components/AboutUs';
+import Card from '@/components/Card';
 
 
 

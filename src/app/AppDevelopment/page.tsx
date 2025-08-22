@@ -16,7 +16,7 @@ export default function AppDevelopmentPage() {
             link: "/contact",
         },
         image: {
-            src: "",
+            src: "/assets/img/newimage/4380747.jpg",
             alt: "App Development",
             width: 600,
             height: 500,
