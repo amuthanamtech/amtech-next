@@ -19,12 +19,12 @@ pages_build_output_dir = ".vercel/output/static"
 # [vars]
 # MY_VARIABLE = "production_value"
 
-# Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
+# Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare's global network
 # Docs: https://developers.cloudflare.com/pages/functions/bindings/#workers-ai
 # [ai]
 # binding = "AI"
 
-# Bind a D1 database. D1 is Cloudflare’s native serverless SQL database.
+# Bind a D1 database. D1 is Cloudflare's native serverless SQL database.
 # Docs: https://developers.cloudflare.com/pages/functions/bindings/#d1-databases
 # [[d1_databases]]
 # binding = "MY_DB"
@@ -86,49 +86,20 @@ pages_build_output_dir = ".vercel/output/static"
 # binding = "MY_KV_NAMESPACE"
 # id = "<PRODUCTION_NAMESPACE_ID>"
 
+# Global variables - use environment variables instead of hardcoded values
 [vars]
-# This is just a placeholder, actual value will come from .dev.vars locally
-RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
-
-[env.preview.vars]
-RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
-
-[env.production.vars]
-RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
-
-name = "my-chatbot"
-main = "src/index.ts"
-compatibility_date = "2025-08-06"
-pages_build_output_dir = ".vercel/output/static" 
-
-[vars]
-GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-
-[[services]]
-binding = "GROQ_API_KEY"
-type = "secret"
-
-
-# wrangler.toml
-name = "my-next-app"
-compatibility_date = "2024-11-12"
-compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".vercel/output/static"
-
-# Global variables
-[vars]
-RESEND_API_KEY = "re_QjWkAhQb_HvJqrqadNTybksVCR3KdTZ7D"
-GROQ_API_KEY = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+RESEND_API_KEY = "${RESEND_API_KEY}"
+GROQ_API_KEY = "${GROQ_API_KEY}"
 
 # Preview environment overrides
-[env.preview]
-vars = { RESEND_API_KEY = "preview_key_here" }
+[env.preview.vars]
+RESEND_API_KEY = "${RESEND_API_KEY_PREVIEW}"
 
 # Production environment overrides
-[env.production]
-vars = { RESEND_API_KEY = "production_key_here" }
+[env.production.vars]
+RESEND_API_KEY = "${RESEND_API_KEY_PRODUCTION}"
 
-# Service binding (corrected format)
+# Service binding for GROQ API
 [[services]]
 binding = "GROQ_API_KEY"
-service = "my-service"  # Replace with actual service name
+service = "my-service"  # Replace with actual service name if needed
